@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Typist from 'react-typist'
 
+
 export class Main extends Component {
   render() {
     return (
@@ -27,16 +28,6 @@ export class Main extends Component {
             >
               <p><span className='coder'><strong>{"<"}</strong>Coder<strong>{"/>"}</strong></span> for designers... <span className='designer'>Designer</span> for coders.</p>
             </Typist>
-            {/* <Typist
-              startDelay={3200}
-              cursor={{
-                show: false,
-                blink: false,
-                element: "|"
-              }}
-            >
-              <p><span className='designer'>Designer</span> for coders.</p>
-            </Typist> */}
           </div>
         </div>
       </div>

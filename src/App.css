@@ -1,6 +1,6 @@
   /* FONTS */
   @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
-  @import url('https://fonts.googleapis.com/css?family=Arizonia');
+  @import url('https://fonts.googleapis.com/css?family=Alex+Brush');
   @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 
   /*
@@ -121,7 +121,7 @@
 .slogan {
   display: flex;
   margin-top: 1em;
-  line-height: 3em;
+  line-height: 2em;
 }
 
 .particle-layer {
@@ -136,6 +136,85 @@
 }
 
 .designer {
-  font-family: 'Arizonia', cursive;
+  font-family: 'Alex Brush', cursive;
   font-size: 2rem;
+}
+
+/*
+ Modal
+*/
+
+.modal-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 22;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-container.hide {
+  display: none!important;
+}
+.modal-container.show {
+  display: block!important;
+}
+
+.modal-container h1{
+  margin-top: 1em;
+  text-align: center;
+}
+.modal-container p{
+  text-align: left;
+  padding: 1.3em;
+}
+.modal-container h2{
+  text-align: left;
+  padding: 1em;
+}   
+
+.modal-container .content {
+  text-align: left;
+  position: absolute;
+  background-color: #232822;
+  color: white;
+  width: 50%;
+  height: 80%;
+  z-index: 25;
+  overflow-y: scroll;
+}
+
+.blackground{
+  background-color: black;
+  opacity: 0.7;
+  width: 100vw;
+  height: 100vh;
+  z-index: 22;
+}
+
+#resume.modal-container {
+  overflow: scroll;
+  height: 100vh;
+}
+
+#resume.modal-container .content{
+  width: 90%;
+  left: 5%;
+  height: 80vh;
+  top: 10vh;
+  overflow: scroll;
+}
+
+#resume.modal-container .content h2{
+  text-align: center;
+}
+#resume.modal-container .content p{
+  padding: 0 4%;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left!important;
 }

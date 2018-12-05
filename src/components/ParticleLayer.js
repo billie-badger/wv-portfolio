@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Particles from 'react-particles-js';
 
-export class ParticleLayer extends Component {
-  render() {
+export default function ParticleLayer() {
+
     return (
       <div className="particle-layer">
         <Particles 
@@ -34,7 +34,6 @@ export class ParticleLayer extends Component {
         />
       </div>
     )
-  }
+  
 }
 
-export default ParticleLayer

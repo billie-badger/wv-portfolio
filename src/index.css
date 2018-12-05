@@ -3,3 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+a:visited {
+  text-decoration: none;
+  color: none;
+}

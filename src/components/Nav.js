@@ -6,7 +6,7 @@ export class Nav extends Component {
     return (
       <div className="Nav">
         <Fade
-          delay={1500}
+          delay={2000}
         >
           <ul>
             <li className="orange">about</li>
