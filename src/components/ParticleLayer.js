@@ -15,6 +15,14 @@ export default function ParticleLayer() {
                     value_area: 800
                   }
                 },
+                interactivity: {
+                  events: {
+                    onhover: {
+                      enable: true,
+                      mode: 'repulse'
+                    }
+                  }
+                },
                 color: {
                   value: ['#232822', '#F92672', '#66D9EF', '#A6E22E', '#FD971F', '#FFFFFF']
                 },

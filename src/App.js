@@ -1,11 +1,18 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
-import Nav from './components/Nav'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+
 import './App.css'
 import '../node_modules/font-awesome/css/font-awesome.min.css'
+
+import Nav from './components/Nav'
 import Contact from './components/Contact';
 import Main from './components/Main';
 import ParticleLayer from './components/ParticleLayer';
+import About from './components/About'
+import Code from './components/Code'
+import Design from './components/Design'
+import Bonus from './components/Bonus'
+
 
 
 
@@ -15,7 +22,13 @@ class App extends Component {
       <Router>
         <div className="App gray">
           <ParticleLayer />
-          <Route exact path="/" component={Main} />
+          <Switch>
+            <Route exact path="/" component={Main} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/code" component={Code} />
+            <Route exact path="/design" component={Design} />
+            <Route exact path="/bonus" component={Bonus} />
+          </Switch>
           <Nav />
           <Contact />
         </div>

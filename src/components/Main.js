@@ -26,7 +26,7 @@ export class Main extends Component {
                 element: "|"
               }}
             >
-              <p><span className='coder'><strong>{"<"}</strong>Coder<strong>{"/>"}</strong></span> for designers... <span className='designer'>Designer</span> for coders.</p>
+              <p><span className='coder'>{"<"}Coder{"/>"}</span> for designers... <span className='designer'>Designer</span> for coders.</p>
             </Typist>
           </div>
         </div>
