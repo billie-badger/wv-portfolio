@@ -1,5 +1,5 @@
 import React from 'react'
-import Particles from 'react-particles-js';
+import { Particles } from 'react-particles-js';
 
 export default function ParticleLayer() {
 
@@ -16,26 +16,47 @@ export default function ParticleLayer() {
                   }
                 },
                 interactivity: {
+                  detect_on: "window",
                   events: {
                     onhover: {
                       enable: true,
                       mode: 'repulse'
+                    },
+                    onclick: {
+                      enable: true,
+                      mode: 'grab'
+                    },
+                    resize: true
+                  },
+                  modes: {
+                    grab: {
+                      distance: 180,
+                      line_linked: {
+                        opacity: 0.35
+                      }
+                    },
+                    repulse: {
+                      distance: 100,
+                      duration: 5
                     }
                   }
                 },
                 color: {
-                  value: ['#232822', '#F92672', '#66D9EF', '#A6E22E', '#FD971F', '#FFFFFF']
+                  // value: ['#F92672', '#66D9EF', '#A6E22E', '#FD971F']
+                  value: '#F92672'
                 },
                 size: {
                   value: 2
                 },
                 line_linked: {
-                  color: '#000',
+                  color: '#F92672',
                   opacity: 0.4,
+                  distance: 250,
                 },
                 move: {
                   speed: 2
-                }
+                },
+                retina_detect: true,
               }
               
             }}

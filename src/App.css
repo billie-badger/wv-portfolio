@@ -13,13 +13,17 @@
   orange #FD971F 
   */
 
+/*
+COMPONENTS
+*/
+
 .App {
+  background: #232822;
   position: relative;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
   font-family: 'Quicksand';
-  background: #232822;
   color: white;
 }
 
@@ -127,9 +131,9 @@
   content: '';
   position: absolute;
   bottom: 0;
-  left: 30px;
-  width: 2px;
-  height: 100%;
+  left: -5px;
+  width: 100%;
+  height: 2px;
   background: white;
   opacity: 0;
   transform: rotate(10deg);
@@ -183,8 +187,23 @@
   font-size: 1.3rem;
 }
 
+.about, .code, .design, .bonus {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about p{
+  width: 80vw;
+}
+
 /*
- Modal
+ MODAL
 */
 
 .modal-container {
@@ -285,4 +304,31 @@ SCROLLBAR
 	border-radius: 10px;
 	box-shadow: inset 0 0 10px rgba(0,0,0,.5);
 	background-color: #555;
+}
+
+
+
+/*
+PAGE TRANSITIONS
+*/
+
+.fade-appear,
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-appear-active,
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit,
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease;
 }
