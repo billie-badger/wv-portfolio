@@ -17,10 +17,10 @@ export class Nav extends Component {
                     src={logo} 
                     alt="wv-logo"
                     style={{
-                      width: '40px',
+                      width: '30px',
                       position: 'absolute',
-                      top: '2em',
-                      left: '2em',
+                      top: '1.5em',
+                      left: '1.5em',
                     }}
                 />
               </Fade>

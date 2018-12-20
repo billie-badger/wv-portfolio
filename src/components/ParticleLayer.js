@@ -43,18 +43,18 @@ export default function ParticleLayer() {
                 },
                 color: {
                   // value: ['#F92672', '#66D9EF', '#A6E22E', '#FD971F']
-                  value: '#F92672'
+                  value: '#66D9EF'
                 },
                 size: {
-                  value: 2
+                  value: 1.75
                 },
                 line_linked: {
-                  color: '#F92672',
-                  opacity: 0.4,
-                  distance: 250,
+                  color: '#000000',
+                  opacity: 0.3,
+                  distance: 240,
                 },
                 move: {
-                  speed: 2
+                  speed: 1.5
                 },
                 retina_detect: true,
               }
