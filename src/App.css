@@ -342,7 +342,12 @@ PAGE TRANSITIONS
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
-  padding: 0 50%;
+  padding: 11% 50%;
+  overflow-y: scroll;
+}
+
+.code::-webkit-scrollbar {
+  display: none;
 }
 
 .code div {
@@ -367,7 +372,27 @@ PAGE TRANSITIONS
   width: 100px;
   height: 100px;
   border: 1px solid #66D9EF;
+  opacity: 0.3;
+  background: black;
 }
+
+.pure-css li:hover, .js li:hover {
+  background: #66D9EF;
+  opacity: 1;
+}
+
+.scroll-arrow-down {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  width: 10px !important;
+  height: 10px;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  animation: bounce .5s infinite alternate;
+}
+
+/* MEDIA QUERIES */
 
 @media only screen and (max-width: 650px) {
   .about p {
@@ -375,7 +400,25 @@ PAGE TRANSITIONS
     padding: 0 1.5em;
   }
 
+  .code {
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 20%;
+  
+  }
+
   .pure-css, .js {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+/* ANIMATIONS */
+@keyframes bounce {
+  0% {
+    transform: translateY(0px) rotate(45deg);
+  }
+
+  100% {
+    transform: translateY(-10px) rotate(45deg);
   }
 }
