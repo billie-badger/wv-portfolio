@@ -339,8 +339,17 @@ PAGE TRANSITIONS
 }
 
 .code {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 0 50%;
+}
+
+.code div {
+  text-align: center;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .code h1 {
