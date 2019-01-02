@@ -198,6 +198,14 @@ COMPONENTS
   justify-content: center;
 }
 
+.about {
+  flex-direction: column;
+}
+
+.about h1 {
+  margin: 1em 0;
+}
+
 .about p{
   width: 60vw;
 }
@@ -340,7 +348,7 @@ PAGE TRANSITIONS
 
 .code {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 20px;
   padding: 11% 50%;
   overflow-y: scroll;
@@ -369,15 +377,102 @@ PAGE TRANSITIONS
 }
 
 .pure-css li, .js li {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border: 1px solid #66D9EF;
   opacity: 0.3;
   background: black;
+  transition: .2s ease-in-out;
 }
 
 .pure-css li:hover, .js li:hover {
   background: #66D9EF;
+  opacity: 1;
+}
+
+.design {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+  padding: 11% 50%;
+  overflow-y: scroll;
+}
+
+.design::-webkit-scrollbar {
+  display: none;
+}
+
+.design div {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.design h1 {
+  margin: 1em 0;
+}
+
+.logos, .gimp, .inkscape {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  list-style: none;
+}
+
+.logos li, .gimp li, .inkscape li {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #F92672;
+  opacity: 0.3;
+  background: black;
+}
+
+.logos li:hover, .gimp li:hover, .inkscape li:hover{
+  background: #F92672;
+  opacity: 1;
+}
+
+.bonus {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+  padding: 11% 50%;
+  overflow-y: scroll;
+}
+
+.bonus::-webkit-scrollbar {
+  display: none;
+}
+
+.bonus div {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.bonus h1 {
+  margin: 1em 0;
+}
+
+.woodworks, .electronics, .music, .martial-arts{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  list-style: none;
+}
+
+.woodworks li, .electronics li, .music li, .martial-arts li {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #A6E22E;
+  opacity: 0.3;
+  background: black;
+}
+
+.woodworks li:hover, .electronics li:hover, .music li:hover, .martial-arts li:hover{
+  background: #A6E22E;
   opacity: 1;
 }
 
@@ -403,13 +498,46 @@ PAGE TRANSITIONS
   .code {
     grid-template-columns: repeat(1, 1fr);
     padding-top: 20%;
-  
   }
 
+  
+  
   .pure-css, .js {
     grid-template-columns: repeat(2, 1fr);
   }
+  
+  .pure-css li, .js li {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .design {
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 20%;
+  }
+  
+  .logos, .gimp, .inkscape {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .logos li, .gimp li, .inkscape li  {
+    width: 100px;
+    height: 100px;
+  }
 
+  .bonus {
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 20%;
+  }
+
+  .woodworks, .electronics, .music, .martial-arts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .woodworks li, .electronics li, .music li, .martial-arts li {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 /* ANIMATIONS */

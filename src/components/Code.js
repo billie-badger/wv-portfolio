@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
 
 export class Code extends Component {
-  
+    
   render() {
-    return (
-      
+    return (   
       <div className='code'>
         <div>
           <h1>Pure CSS</h1>
@@ -39,40 +38,7 @@ export class Code extends Component {
             <li></li>
           </ul>
         </div>
-        <div>
-          <h1>Vue.js</h1>
-          <ul className="js">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
-        <div>
-          <h1>JS</h1>
-          <ul className="js">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
-        <div>
-          <h1>JS</h1>
-          <ul className="js">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
-        <div className="scroll-arrow-down" />
+        <div className="scroll-arrow-up" />
         <div className="scroll-arrow-down" />
       </div>
     )
